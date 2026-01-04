@@ -22,6 +22,9 @@ class Solution:
         return result
     
 # Optimized Solution
+# T = O(n) S = O(1)
+# Relies on modifying the input array instead of creating a new one
+# Simplifies the logic for carrying over digits because the resultant value is always the modulus
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
         carried_digit = 1
