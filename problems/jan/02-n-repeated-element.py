@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/n-repeated-element-in-size-2n-array
+
 # Attempt 1
 # T = O(n) S = O(n)
 class Solution:
