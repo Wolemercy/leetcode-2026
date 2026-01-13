@@ -2,6 +2,8 @@
 
 # T = O(N * K) where N is the number of squares and K is the number of iterations for binary search; S = O(1)
 # Binary search problem to find the horizontal line that separates the squares into two equal areas
+# It helps to know that adjusting the horizontal line upwards increases the area below it, and it is therefore, monotonic
+# Binary search is then used to find the line that gives half the total area. We iterate a fixed number of times to ensure precision.
 from typing import List
 class Solution:
     def separateSquares(self, squares: List[List[int]]) -> float:
